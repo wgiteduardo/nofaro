@@ -14,4 +14,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::apiResource('pets', 'API\PetController')->except('update');;
+Route::apiResource('pets', 'API\PetController')->except('update');
+Route::apiResource('services', 'API\ServiceController')->except(['update', 'store']);
+Route::post('services/{pet}', 'API\ServiceController@store')->name('services.store');

@@ -59,8 +59,12 @@ class PetController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Pet $pet)
+    public function destroy($id)
     {
+        $pet = Pet::find($id);
+        if(!$pet)
+            return response('404 not found', 404);
+
         $pet->delete();
 
         return response('deleted', 200);
