@@ -22,14 +22,14 @@ Você pode desfrutar da API do projeto enviando requisições para as urls abaix
 
 ### Pets
 
-> api/pets [GET] -> Lista os pets cadastrados 
-> api/pets [POST] -> Cadastrar um novo pet (necessário: name e specie)
-> api/pets/{pet} [GET] -> Retorna os dados de um pet especifico
-> api/pets/{pet} [DELETE] -> Deleta um pet do banco de dados
+> api/pets [GET] -> Lista os pets cadastrados    
+> api/pets [POST] -> Cadastrar um novo pet (necessário: name e specie)    
+> api/pets/{pet} [GET] -> Retorna os dados de um pet especifico    
+> api/pets/{pet} [DELETE] -> Deleta um pet do banco de dados    
 
 ### Serviços
 
-> api/services [GET] -> Lista os serviços dos pets com paginação
-> api/services/{pet} [POST] -> Cadastra um novo serviço para um pet (necessario date e description opcional) - Deve passar o ID do pet na URL.
-> api/services/{service} [GET] -> Realiza uma busca no banco de dados procurando serviços de pets com o nome parecido com o que for informado na URL. Exemplo: api/services/Bob
-> api/services/{service} [DELETE] -> Deleta um serviço
+> api/services [GET] -> Lista os serviços dos pets com paginação    
+> api/services/{pet} [POST] -> Cadastra um novo serviço para um pet (necessario date e description opcional) - Deve passar o ID do pet na URL.    
+> api/services/{service} [GET] -> Realiza uma busca no banco de dados procurando serviços de pets com o nome parecido com o que for informado na URL. Exemplo: api/services/Bob    
+> api/services/{service} [DELETE] -> Deleta um serviço    
